@@ -1,0 +1,198 @@
+{
+  "pages": {
+    "page_0": {
+      "id": "page_0",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_0"
+      },
+      "isDefault": true,
+      "isVisible": true,
+      "label": "Page"
+    },
+    "page_1": {
+      "id": "page_1",
+      "mode": "FIT_WINDOW",
+      "type": "NORMAL",
+      "layout": {
+        "LARGE": "layout_2"
+      },
+      "isDefault": false,
+      "isVisible": true,
+      "label": "Page 2",
+      "header": false,
+      "footer": false
+    }
+  },
+  "layouts": {
+    "layout_0": {
+      "type": "FIXED",
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_1",
+          "bbox": {
+            "left": "0.0%",
+            "right": "0.0%",
+            "top": "0.0%",
+            "bottom": "0.0%",
+            "width": "100.0%",
+            "height": "100.0%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": false,
+              "top": false,
+              "bottom": false,
+              "height": "STRETCH",
+              "width": "STRETCH"
+            },
+            "vCenter": false,
+            "hCenter": false
+          }
+        }
+      },
+      "order": [
+        "0"
+      ]
+    },
+    "layout_1": {
+      "content": {
+        "0": {
+          "type": "WIDGET",
+          "widgetId": "widget_2",
+          "bbox": {
+            "left": "50%",
+            "right": "39.3%",
+            "top": "82.9%",
+            "bottom": "2.00%",
+            "width": "45.00%",
+            "height": "13.00%"
+          },
+          "setting": {
+            "autoProps": {
+              "left": false,
+              "right": true,
+              "top": true,
+              "bottom": false
+            },
+            "hCenter": true,
+            "vCenter": false,
+            "style": {
+              "transform": {
+                "rotate": 0
+              }
+            }
+          }
+        }
+      },
+      "type": "FIXED",
+      "label": "Map FixedLayout",
+      "order": [
+        "0"
+      ]
+    },
+    "layout_2": {
+      "type": "FIXED",
+      "content": {},
+      "order": []
+    }
+  },
+  "exbVersion": "1.14.0",
+  "mainSizeMode": "LARGE",
+  "theme": "themes/default/",
+  "forBuilderAttributes": {
+    "lockLayout": false,
+    "viewPortSize": {
+      "LARGE": {
+        "width": 1366,
+        "height": 768
+      }
+    }
+  },
+  "template": "blankfullscreen",
+  "widgets": {
+    "widget_1": {
+      "uri": "widgets/arcgis/arcgis-map/",
+      "version": "1.14.0",
+      "label": "Map",
+      "config": {
+        "toolConfig": {
+          "canZoom": true,
+          "canHome": true,
+          "canSearch": false,
+          "canNavigation": true
+        },
+        "isUseCustomMapState": false
+      },
+      "id": "widget_1",
+      "layouts": {
+        "MapFixedLayout": {
+          "LARGE": "layout_1"
+        }
+      },
+      "useDataSources": [
+        {
+          "dataSourceId": "dataSource_1",
+          "mainDataSourceId": "dataSource_1"
+        }
+      ]
+    },
+    "widget_2": {
+      "uri": "widgets/sistema-iav/",
+      "version": "1.11.0",
+      "config": {},
+      "id": "widget_2",
+      "style": {
+        "background": {
+          "color": "rgba(0,0,0,0)",
+          "fillType": "fill",
+          "image": {
+            "url": ""
+          }
+        }
+      },
+      "useMapWidgetIds": [
+        "widget_1"
+      ]
+    }
+  },
+  "widgetsManifest": {},
+  "views": {},
+  "sections": {},
+  "dialogs": {},
+  "dataSources": {
+    "dataSource_1": {
+      "id": "dataSource_1",
+      "type": "WEB_MAP",
+      "sourceLabel": "RMR_PE3D_mapabase",
+      "itemId": "8e019bbb14684289896db83ff9b8ef2a",
+      "portalUrl": "https://labgeo-ifpe.maps.arcgis.com"
+    }
+  },
+  "messageConfigs": {},
+  "attributes": {
+    "portalUrl": "https://labgeo-ifpe.maps.arcgis.com"
+  },
+  "sharedThemeVariables": {
+    "header": {},
+    "body": {},
+    "button": {},
+    "logo": {
+      "small": null,
+      "link": null
+    }
+  },
+  "originExbVersion": "1.14.0",
+  "pageStructure": [
+    {
+      "page_0": []
+    },
+    {
+      "page_1": []
+    }
+  ],
+  "timestamp": 1718066133610
+}
